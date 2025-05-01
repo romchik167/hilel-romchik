@@ -1,0 +1,35 @@
+body{
+    background-color: rgb(191, 182, 182);
+}
+.wrapper{
+background-color: rgb(255, 251, 251);
+margin: 10px 10px;    
+}
+.title{
+    text-align: center;
+}
+
+.minion-item{
+    display: inline-block;
+    border: 2px solid gray;
+    padding: 3px;
+    text-align: center;
+
+}
+.img-minion{
+    align-items: center;
+}
+.minion-title{
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(211, 211, 211);
+}
+.minion-link{
+    color: black;
+    border: 0;
+    border-radius: 5px;
+    text-decoration: none; 
+    background-color: rgb(182, 180, 180);
+    font-size:  16px; 
+}
