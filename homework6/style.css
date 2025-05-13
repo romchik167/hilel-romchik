@@ -1,7 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
-.header {
-  max-width: 1200px;
-}
 body {
   font-family: Roboto, sans-serif;
 }
@@ -11,8 +8,6 @@ body {
 }
 
 .nav {
-  margin: 33px 53px 10px 100px;
-  max-width: 1200px;
   border-bottom: 1px solid black;
   padding-bottom: 0px;
 }
@@ -51,8 +46,8 @@ a {
   border-bottom: 2px solid green;
 }
 .banner {
-  padding: 60px 80px;
-  margin: 0px 53px 0px 100px;
+  padding: 60px 0;
+  margin: 0 auto;
   background-color: rgb(244, 243, 243);
 }
 .h1 {
