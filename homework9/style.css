@@ -159,12 +159,20 @@ a {
 .nav-shop-container {
   max-width: 1200px;
 }
+.hover-buttons-of-list-container {
+  position: absolute;
+  top: 200px;
+  left: 32px;
+}
 .item-list-item:hover {
   border-top: #46a358 2px solid;
 }
 .hover-img {
   display: none;
   margin: 10px;
+  background-color: #fffbfb;
+  padding: 10px;
+  border-radius: 5px;
 }
 .item-list-item:hover .hover-img {
   display: block;
@@ -179,6 +187,7 @@ a {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  border: 1px solid transparent;
 }
 .hover-button:hover {
   border: 1px solid #46a358;
@@ -238,6 +247,7 @@ a {
   height: 350px;
   background-color: rgba(247, 247, 247, 0.353);
   position: relative;
+  border-top: transparent 2px solid;
 }
 
 .item-list-item a {
