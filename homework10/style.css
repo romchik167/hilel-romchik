@@ -23,13 +23,34 @@ body {
   margin: 0 10px;
   color: black;
   padding-bottom: 5px;
+  border-bottom: 2px solid transparent;
+}
+.nav-start,
+.site-nav,
+.loggin-btn {
+  flex: 1;
+}
+.nav-start {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.site-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loggin-btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 .loggin-button {
   padding: 10px 20px;
   cursor: pointer;
   font-size: 16px;
 }
-.site-nav:hover {
+.nav-item:hover {
   color: green;
   border-bottom: 2px solid green;
 }
@@ -41,7 +62,6 @@ a {
   margin-right: 400px;
 }
 .loggin-button {
-  margin-left: 40px;
   color: #46a358;
   background-color: #46a358;
   border: none;
@@ -57,6 +77,7 @@ a {
 .loggin-img {
   margin-right: 2px;
 }
+
 .hover-plant-care-item {
   padding: 2px;
 }
@@ -182,9 +203,6 @@ a {
   padding: 5px;
 }
 
-.active {
-  border-bottom: 2px solid green;
-}
 .banner {
   height: 450px;
   padding: 60px 0;
