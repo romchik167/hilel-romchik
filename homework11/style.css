@@ -579,6 +579,10 @@ a {
   background-color: #f8f8f8;
   padding: 20px;
   margin-top: 50px;
+  width: 100%;
+  height: 610px;
+  position: relative;
+  border-bottom: 2px solid #ccc;
 }
 .interesting-facts {
   display: flex;
@@ -586,6 +590,7 @@ a {
   align-items: center;
   flex-wrap: wrap;
   margin-top: 20px;
+  position: relative;
 }
 .interesting-facts-element {
   display: flex;
@@ -606,6 +611,14 @@ a {
   color: #727272;
   margin-top: 10px;
   line-height: 22px;
+}
+.line-svg-1 {
+  position: absolute;
+  left: 250px;
+}
+.line-svg-2 {
+  position: absolute;
+  left: 550px;
 }
 
 .interesting-facts-element-input {
@@ -637,4 +650,81 @@ a {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+}
+
+.footer-contacts-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  width: 100%;
+  height: 88px;
+  background: #edf6ef;
+  background: linear-gradient(
+    90deg,
+    rgba(237, 246, 239, 1) 0%,
+    rgba(82, 195, 104, 1) 100%
+  );
+  position: absolute;
+  left: 0px;
+}
+.footer-contacts {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.footer-lists {
+  display: flex;
+  width: 100%;
+  height: 236px;
+  justify-content: space-between;
+  margin-top: 150px;
+}
+.others-list {
+  display: flex;
+  gap: 20px;
+}
+.social-media-element {
+  margin-top: 20px;
+  border: 1px solid #46a358;
+  border-radius: 4px;
+  padding: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+}
+.footer-others-list {
+  margin-top: 20px;
+}
+.we-accept-element {
+  margin-top: 10px;
+}
+.footer-list-title {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 16px;
+  margin-bottom: 10px;
+}
+.footer-list-ul {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.footer-list-li {
+  color: #727272;
+  font-size: 14px;
+  line-height: 30px;
+}
+.last-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  color: #727272;
+  line-height: 30px;
+  margin-top: 10px;
 }
