@@ -281,13 +281,17 @@ a {
 }
 .categories-list .categories-item.active-categories {
   color: green;
-  border-bottom: 2px solid green;
+ 
 }
 .categories-list {
   list-style: none;
   width: 103px;
   height: 303px;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 30px;
+  margin-left: 10px;
 }
 .categories-item {
   text-decoration: none;
@@ -338,10 +342,13 @@ a {
 }
 .price-item {
   display: flex;
+  position: relative;
 }
 .sale {
   text-decoration: line-through;
   color: #727272;
+  position: absolute;
+  left: 75px;
 }
 .sale-text {
   background-color: #46a358;
@@ -351,8 +358,11 @@ a {
   height: 29px;
   padding: 3px;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 5px;
+  left: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .nav-shop-list {
   display: flex;
@@ -382,6 +392,7 @@ a {
 .item-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 .item-list-item {
   display: flex;
@@ -451,7 +462,7 @@ a {
 .advert {
   background-color: #fbfbfb;
   width: 586px;
-  height: 270px;
+  height: 300px;
 }
 .advert-content {
   display: flex;
@@ -556,6 +567,9 @@ a {
   font-size: 14px;
   margin-left: 5px;
   margin-right: 5px;
+  position: absolute;
+  bottom: 5px;
+  left: 10px;
 }
 .posts-content-read-more:hover {
   color: #46a358;
@@ -571,10 +585,17 @@ a {
 }
 .posts-list-content-text {
   background-color: #f8f8f8;
+  height: 362px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  position: relative;
+  padding: 0 10px;
 }
 .our-blog-posts-list {
   display: flex;
   justify-content: space-between;
+  margin-top: 30px;
 }
 .footer {
   background-color: #f8f8f8;
