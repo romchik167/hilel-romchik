@@ -8,7 +8,7 @@ body {
 .container {
   margin: 0 auto;
   max-width: 1300px;
-  padding: 0 10px;
+  padding: 0 20px;
   box-sizing: border-box;
 }
 .nav {
@@ -210,76 +210,7 @@ a {
 .priming-hover-element {
   padding: 5px;
 }
-@media screen and (max-width: 768px) {
-  .nav-list {
-    flex-direction: column;
-    align-items: center;
-  }
-  .nav-item {
-    margin: 5px 0;
-  }
-  .loggin-button {
-    width: 100%;
-    text-align: center;
-  }
-  .banner-div-2{
-    position: relative;
-  }
-  .banner-div{
-    position: absolute;
-  }
-}
-@media screen and (max-width: 1050px) {
-.banner-div-1 {
-  position: absolute;
-  z-index: 2;
-}
-.banner-div-2 {
-  top: 0;
-  left: 463px;
-  width: 100%;
-  z-index: 1;
-}
-.adverts{
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
- }
-}
-@media screen and (max-width: 896px) {
- .banner-div-2{
-  opacity: 0.6;
-  left: 200px
- }
- 
-}
-.h1 {
-  font-size: 70px;
-  font-weight: bold;
-}
-@media screen and (max-width: 624px) {
-  .h1 {
-    font-size: 50px;
-  }
-      .banner-div-2 {
-        opacity: 0.5;
-        left: 0;
-    }
-    .header{
-      position: relative;
-    }
-    .banner-div{
-      top: auto;
-      left: 150px;
-    }
-    }
 
-@media screen and (max-width: 320px) {
-.banner-div{
-      top: auto;
-      left: 10px;
-    }
-}
 .banner {
   height: 450px;
   padding: 40px 10px;
@@ -298,9 +229,8 @@ a {
   flex-direction: column;
   row-gap: 10px;
 }
-.banner-div-2 {
+.banner-div-2-wrap {
   position: relative;
-  overflow: hidden;
 }
 .big-img {
   height: 400px;
@@ -336,6 +266,76 @@ a {
 .better-planet-p {
   line-height: 10px;
   }
+  @media screen and (max-width: 768px) {
+  .nav-list {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-item {
+    margin: 5px 0;
+  }
+  .loggin-button {
+    width: 100%;
+    text-align: center;
+  }
+  .banner-div-2-wrap{
+    position: relative;
+  }
+  .banner-div{
+    position: absolute;
+  }
+}
+@media screen and (max-width: 1050px) {
+.banner-div-1 {
+  position: absolute;
+  z-index: 2;
+}
+.banner-div-2-wrap {
+  top: 0;
+  left: 463px;
+  width: 100%;
+  z-index: 1;
+}
+.adverts{
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+ }
+}
+@media screen and (max-width: 896px) {
+ .banner-div-2-wrap{
+  opacity: 0.6;
+  left: 200px;
+ }
+ 
+}
+.h1 {
+  font-size: 70px;
+  font-weight: bold;
+}
+@media screen and (max-width: 624px) {
+  .h1 {
+    font-size: 50px;
+  }
+      .banner-div-2 {
+        opacity: 0.5;
+        left: 0;
+    }
+    .header{
+      position: relative;
+    }
+    }
+
+@media screen and (max-width: 425px) {
+.banner-div{
+      top: auto;
+      left: 10px;
+      overflow: hidden;
+    }
+ .banner-div-2-wrap{
+  left: 20px;
+ }
+    }
 @media screen and (max-width: 624px) {
   .h1 {
     font-size: 35px;
@@ -556,10 +556,12 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 10px;
   }
   .nav-shop-list {
    flex-wrap: wrap;
    row-gap: 10px;
+   margin-top: 10px;
   }
   .shop-all-list {
     flex-direction: column;
@@ -667,6 +669,42 @@ a {
 .advert-content-button-img {
   margin-left: 2px;
 }
+@media screen and (max-width: 1024px) {
+  .adverts {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+}
+@media screen and (max-width:450px){
+  .advert{
+    width: 100%;
+  }
+  .advert-content-img{
+    width: 205px;
+  }
+  .advert-content-p{
+    color: #3d3d3d;
+  }
+}
+@media screen and (max-width:425px){
+  .advert-content-img {
+    opacity: 0.3;
+    width: 100%;
+    }
+  .advert-content{
+      position: relative;
+    }
+  .advert-content-text {
+    position: absolute;
+    left: 0;
+    width: 87%;
+    height: 100%;
+}
+.advert-content-button{
+  padding: 10px;
+}
+}
 .posts-list-content {
   display: flex;
   flex-direction: column;
@@ -747,12 +785,21 @@ a {
   justify-content: space-between;
   margin-top: 30px;
 }
+@media screen and (max-width: 1024px) {
+  .our-blog-posts-list {
+    flex-direction: column;
+    align-items: center;
+  }
+  .adverts-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .footer {
   background-color: #f8f8f8;
-  padding: 20px;
   margin-top: 50px;
   width: 100%;
-  height: 610px;
   position: relative;
   border-bottom: 2px solid #ccc;
 }
@@ -763,11 +810,12 @@ a {
   flex-wrap: wrap;
   margin-top: 20px;
   position: relative;
+  padding: 20px;
 }
 .interesting-facts-element {
   display: flex;
   flex-direction: column;
-  margin: 10px;
+  gap: 10px;
   width: 204px;
   height: 202px;
 }
@@ -791,7 +839,31 @@ a {
   position: absolute;
   left: 550px;
 }
-
+@media screen and (max-width: 1024px) {
+  .line-svg-1 {
+    left: 280px;
+    top: 30px;
+  }
+  .line-svg-2 {
+    left: 630px;
+    top: 30px;
+  
+}
+@media screen and (max-width: 768px) {
+  .interesting-facts {
+    flex-direction: column;
+    align-items: center;
+  }
+  .interesting-facts-element {
+    width: 100%;
+    max-width: 354px;
+  }
+  .line-svg-1,
+  .line-svg-2 {
+    display: none;
+  }
+}
+}
 .interesting-facts-element-input {
   width: 354px;
   height: 202px;
@@ -833,8 +905,6 @@ a {
     rgb(229, 242, 232) 0%,
     rgba(82, 195, 104, 1) 100%
   );
-  position: absolute;
-  left: 0px;
 }
 .footer-contacts-content {
   display: flex;
@@ -849,12 +919,21 @@ a {
   gap: 10px;
   align-items: center;
 }
+@media screen and (max-width: 1024px) {
+  .footer-contacts {
+    gap: 3px;
+  }
+  .footer-contacts-content {
+    flex-wrap: wrap;
+    column-gap: 20px;
+  }
+}
 .footer-lists {
   display: flex;
   width: 100%;
-  height: 236px;
   justify-content: space-between;
-  margin-top: 150px;
+  margin-top: 40px;
+  padding: 0 20px;
 }
 .others-list {
   display: flex;
@@ -893,6 +972,59 @@ a {
   color: #727272;
   font-size: 14px;
   line-height: 30px;
+}
+@media screen and (max-width: 425px) {
+  
+  .interesting-facts-form {
+    width: 255px;
+    }
+  .interesting-facts-button{
+    top: 52px;
+  }
+  .footer-contacts-wrap {
+    height: 160px;
+    margin-top: 30px;
+  }
+  .footer-contacts-content{
+    padding: 10px;
+  }
+  .footer-lists {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  .footer-list {
+    width: 50%;
+  }
+  .interesting-facts{
+    align-items: flex-start;
+  }
+  .item-list{
+    align-items: flex-start;
+  }
+  .item-list-item{
+    margin: 0;
+    width: 0;
+  }
+  .buttons-1-2-3-wrap {
+    justify-content: center;
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .categories{
+    margin-right: 0px;
+    width: 100%;
+  }
+  .supersale-banner-img{
+    width: 107%;
+    margin-left: 6px;
+  }
+  
+  .banner-div-2-wrap {
+   left: -25px;
+}
 }
 .last-title {
   display: flex;
