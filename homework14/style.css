@@ -271,9 +271,6 @@ a {
     flex-direction: column;
     align-items: center;
   }
-  .nav-item {
-    margin: 5px 0;
-  }
   .loggin-button {
     width: 100%;
     text-align: center;
@@ -392,9 +389,8 @@ a {
 .categories {
   display: flex;
   flex-direction: column;
-  gap: 30px;
-  width: 310px;
-  height: 1000px;
+  row-gap: 250px;
+  width: 710px;
   margin-right: 20px;
   background-color: rgb(250, 247, 247);
   font-size: 15px;
@@ -415,7 +411,6 @@ a {
 .categories-list {
   list-style: none;
   width: 103px;
-  height: 303px;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -429,8 +424,7 @@ a {
   margin-bottom: 15px;
 }
 .supersale-banner {
-  margin-top: 60px;
-  margin-left: -30px;
+  width: 100%;
 }
 .nav-shop-container {
   max-width: 1200px;
@@ -550,7 +544,6 @@ a {
 @media screen and (max-width: 768px) {
   .item-list-item {
     width: 50%;
-    margin: 10px 0;
   }
   .item-list {
     flex-direction: column;
@@ -566,6 +559,18 @@ a {
   .shop-all-list {
     flex-direction: column;
     align-items: center;
+  }
+  .categories{
+    width: auto;
+  }
+}
+@media screen and (max-width: 425px) {
+  .categories{
+    margin: 0 auto;
+    width: 90%;
+  }
+  .supersale-banner-img{
+    width: 100%;
   }
 }
 .buttons-1-2-3-wrap {
@@ -1003,25 +1008,24 @@ a {
   .item-list{
     align-items: flex-start;
   }
-  .item-list-item{
-    margin: 0;
-    width: 0;
-  }
   .buttons-1-2-3-wrap {
     justify-content: center;
     margin-top: 20px;
   }
 }
 @media screen and (max-width: 320px) {
+  .container{
+    padding: 0 10px;
+  }
   .categories{
-    margin-right: 0px;
+    margin: 10px;
     width: 100%;
   }
-  .supersale-banner-img{
-    width: 107%;
-    margin-left: 6px;
+  .supersale-banner{
+    display: flex;
+    justify-content: center;
+    margin-left: 0px;
   }
-  
   .banner-div-2-wrap {
    left: -25px;
 }
