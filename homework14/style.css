@@ -390,7 +390,7 @@ a {
   display: flex;
   flex-direction: column;
   row-gap: 250px;
-  width: 710px;
+  width: 310px;
   margin-right: 20px;
   background-color: rgb(250, 247, 247);
   font-size: 15px;
@@ -530,6 +530,9 @@ a {
 .item-list-item a {
   text-decoration: none;
   color: inherit;
+}
+.shop-item-img{
+  width: 100%;
 }
 .name-plants {
   font-size: 15px;
