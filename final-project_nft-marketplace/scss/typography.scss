@@ -1,0 +1,82 @@
+@import 'variables';
+@import 'mixins';
+
+// Space Mono version
+
+.mono-h1 {
+  @include text-style(h1, $font-mono);
+  line-height: 110%;
+  font-weight: 600;
+}
+.mono-h2 {
+  @include text-style(h2, $font-mono);
+  line-height: 110%;
+  font-weight: 600;
+}
+.mono-h3 {
+  @include text-style(h3, $font-mono);
+  line-height: 120%;
+  font-weight: 600;
+}
+.mono-h4 {
+  @include text-style(h4, $font-mono);
+  line-height: 140%;
+  font-weight: 600;
+}
+.mono-h5 {
+  @include text-style(h5, $font-mono);
+  line-height: 160%;
+  font-weight: 600;
+}
+.base-mono {
+  @include text-style(base, $font-mono);
+  line-height: 140%;
+  color: #cccccc;
+}
+.span-mono {
+  @include text-style(span, $font-mono);
+  line-height: 110%;
+}
+
+// Work Sans version
+
+.sans-h1 {
+  @include text-style(h1, $font-sans);
+  line-height: 110%;
+  font-weight: 600;
+}
+.sans-h2 {
+  @include text-style(h2, $font-sans);
+  line-height: 110%;
+  font-weight: 600;
+}
+.sans-h3 {
+  @include text-style(h3, $font-sans);
+  line-height: 120%;
+  font-weight: 600;
+}
+.sans-h4 {
+  @include text-style(h4, $font-sans);
+  line-height: 140%;
+  font-weight: 600;
+}
+.sans-h5 {
+  @include text-style(h5, $font-sans);
+  line-height: 140%;
+  font-weight: 600;
+}
+.text-sans {
+  @include text-style(text, $font-sans);
+  line-height: 110%;
+  font-weight: 600;
+}
+.base-sans {
+  @include text-style(base, $font-sans);
+  line-height: 140%;
+  color: #cccccc;
+}
+.span-sans {
+  @include text-style(span, $font-sans);
+  line-height: 110%;
+  color: #cccccc;
+}

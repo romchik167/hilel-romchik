@@ -1,0 +1,148 @@
+.mono-h1 {
+  font-family: "Space Mono", monospace;
+  font-size: 67px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #fff;
+  line-height: 110%;
+  font-weight: 600;
+}
+
+.mono-h2 {
+  font-family: "Space Mono", monospace;
+  font-size: 51px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #fff;
+  line-height: 110%;
+  font-weight: 600;
+}
+
+.mono-h3 {
+  font-family: "Space Mono", monospace;
+  font-size: 38px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #fff;
+  line-height: 120%;
+  font-weight: 600;
+}
+
+.mono-h4 {
+  font-family: "Space Mono", monospace;
+  font-size: 28px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #fff;
+  line-height: 140%;
+  font-weight: 600;
+}
+
+.mono-h5 {
+  font-family: "Space Mono", monospace;
+  font-size: 22px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #fff;
+  line-height: 160%;
+  font-weight: 600;
+}
+
+.base-mono {
+  font-family: "Space Mono", monospace;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #fff;
+  line-height: 140%;
+  color: #cccccc;
+}
+
+.span-mono {
+  font-family: "Space Mono", monospace;
+  font-size: 12px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #fff;
+  line-height: 110%;
+}
+
+.sans-h1 {
+  font-family: "Work Sans", sans-serif;
+  font-size: 67px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #fff;
+  line-height: 110%;
+  font-weight: 600;
+}
+
+.sans-h2 {
+  font-family: "Work Sans", sans-serif;
+  font-size: 51px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #fff;
+  line-height: 110%;
+  font-weight: 600;
+}
+
+.sans-h3 {
+  font-family: "Work Sans", sans-serif;
+  font-size: 38px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #fff;
+  line-height: 120%;
+  font-weight: 600;
+}
+
+.sans-h4 {
+  font-family: "Work Sans", sans-serif;
+  font-size: 28px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #fff;
+  line-height: 140%;
+  font-weight: 600;
+}
+
+.sans-h5 {
+  font-family: "Work Sans", sans-serif;
+  font-size: 22px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #fff;
+  line-height: 140%;
+  font-weight: 600;
+}
+
+.text-sans {
+  font-family: "Work Sans", sans-serif;
+  font-size: 22px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #fff;
+  line-height: 110%;
+  font-weight: 600;
+}
+
+.base-sans {
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #fff;
+  line-height: 140%;
+  color: #cccccc;
+}
+
+.span-sans {
+  font-family: "Work Sans", sans-serif;
+  font-size: 12px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #fff;
+  line-height: 110%;
+  color: #cccccc;
+}/*# sourceMappingURL=typography.css.map */
