@@ -124,7 +124,7 @@
   font-weight: 400;
   color: #fff;
   line-height: 110%;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .base-sans {
@@ -134,7 +134,16 @@
   font-weight: 400;
   color: #fff;
   line-height: 140%;
+}
+
+.base-sans-grey {
   color: #cccccc;
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #fff;
+  line-height: 140%;
 }
 
 .span-sans {
@@ -144,5 +153,14 @@
   font-weight: 400;
   color: #fff;
   line-height: 110%;
+}
+
+.span-sans-grey {
   color: #cccccc;
+  font-family: "Work Sans", sans-serif;
+  font-size: 12px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #fff;
+  line-height: 110%;
 }/*# sourceMappingURL=typography.css.map */

@@ -68,15 +68,23 @@
 .text-sans {
   @include text-style(text, $font-sans);
   line-height: 110%;
-  font-weight: 600;
+  font-weight: 400;
 }
 .base-sans {
   @include text-style(base, $font-sans);
   line-height: 140%;
-  color: #cccccc;
+}
+.base-sans-grey{
+  color: #cccccc;  
+  @include text-style(base, $font-sans);
+  line-height: 140%;
 }
 .span-sans {
   @include text-style(span, $font-sans);
   line-height: 110%;
+}
+.span-sans-grey{
   color: #cccccc;
+  @include text-style(span, $font-sans);
+  line-height: 110%;
 }

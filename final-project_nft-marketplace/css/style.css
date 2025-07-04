@@ -170,7 +170,7 @@ body {
   font-weight: 400;
   color: #fff;
   line-height: 110%;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .base-sans {
@@ -180,7 +180,16 @@ body {
   font-weight: 400;
   color: #fff;
   line-height: 140%;
+}
+
+.base-sans-grey {
   color: #cccccc;
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #fff;
+  line-height: 140%;
 }
 
 .span-sans {
@@ -190,7 +199,16 @@ body {
   font-weight: 400;
   color: #fff;
   line-height: 110%;
+}
+
+.span-sans-grey {
   color: #cccccc;
+  font-family: "Work Sans", sans-serif;
+  font-size: 12px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #fff;
+  line-height: 110%;
 }
 
 .container {
@@ -214,7 +232,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 5px;
+  gap: 10px;
   background-color: #A259FF;
   border-radius: 20px;
   padding: 16px 35px;
@@ -331,4 +349,143 @@ a {
   width: 100%;
   height: 1px;
   background-color: #858584;
+}
+
+.section {
+  max-width: 1050px;
+  margin: 100px auto;
+}
+
+.section-discover-wrap {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 25px;
+}
+
+.discover-text-title {
+  max-width: 510px;
+}
+
+.discover-text {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.sale-information-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.sale-information-element {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.sale-information-caption {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.discover-artist {
+  background-color: #3b3b3b;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border-radius: 20px;
+}
+
+.discover-artist-text {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.section-collection-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.collection-element-images {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.collection-element-other-images {
+  display: flex;
+  justify-content: space-between;
+}
+
+.collections-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-top-creators-wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.top-creators-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-creators-title {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.top-creators-element-wrap {
+  background-color: #3b3b3b;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 240px;
+  padding: 20px;
+  border-radius: 20px;
+  gap: 20px;
+  position: relative;
+}
+
+.top-creators-element-text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.number-creator {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: #2b2b2b;
+  border: none;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+.top-creators-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }/*# sourceMappingURL=style.css.map */
