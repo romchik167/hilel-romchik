@@ -236,6 +236,7 @@ a {
   background-color: #A259FF;
   border-radius: 20px;
   padding: 16px 35px;
+  border: 2px solid #A259FF;
   cursor: pointer;
 }
 
@@ -250,6 +251,15 @@ a {
   padding: 16px 35px;
   cursor: pointer;
   border: 2px solid #A259FF;
+}
+
+.button:hover {
+  background: transparent;
+}
+
+.button-black:hover {
+  background-color: #A259FF;
+  color: #fff;
 }
 
 .nav-wrap {
@@ -283,14 +293,6 @@ a {
   cursor: pointer;
   z-index: 1001;
 }
-.burger span {
-  display: block;
-  height: 4px;
-  width: 100%;
-  background: #fff;
-  border-radius: 2px;
-  transition: 0.3s;
-}
 
 @media screen and (max-width: 1024px) {
   .burger {
@@ -315,6 +317,59 @@ a {
     display: flex;
   }
 }
+.popup-registration {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 1100;
+  display: none;
+}
+
+.popup-registration.active {
+  display: flex;
+}
+
+.popup-registration-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 400px;
+  padding: 30px;
+  background-color: #3b3b3b;
+  border-radius: 20px;
+  position: relative;
+}
+
+.registration-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.registration-input {
+  padding: 10px 20px;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.registration-button {
+  width: 100%;
+}
+
+.popup-close-btn {
+  background: transparent;
+  position: absolute;
+  cursor: pointer;
+  top: 20px;
+  right: 20px;
+}
+
 .sign-button-h5 {
   font-size: 16px;
 }
@@ -614,12 +669,165 @@ a {
     justify-content: center;
   }
 }
+.section-discover-nft-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.discover-nft-text {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.discover-nft-element {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #3b3b3b;
+  border-radius: 20px;
+  max-width: 310px;
+}
+
+.discover-nft-element-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  padding: 20px;
+}
+
+.discover-nft-element-price-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.discover-nft-element-price {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.discover-nft-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1024px) {
+  .discover-nft-list {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .discover-nft-text {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+  }
+}
+.section-how-it-works-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.how-it-works-title {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.how-it-works-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.how-it-works-element {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  max-width: 320px;
+  text-align: center;
+  background-color: #3b3b3b;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.section-join-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  background-color: #3b3b3b;
+  border-radius: 20px;
+}
+
+.section-join-text {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+  .how-it-works-list {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  .how-it-works-title {
+    text-align: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 929px) {
+  .section-join-wrap {
+    max-width: 100%;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+  }
+  .section-join-text {
+    position: absolute;
+    right: auto;
+    align-items: center;
+  }
+  .section-join-img {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .join-text-h3 {
+    font-size: 24px;
+  }
+  .section-join-wrap {
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .section-join-text {
+    max-width: 100%;
+    gap: 5px;
+  }
+}
 .footer {
   background-color: #3b3b3b;
   padding: 30px 100px;
   display: flex;
   flex-direction: column;
   gap: 20px;
+  width: 100%;
 }
 
 .footer-wrap {
@@ -659,16 +867,17 @@ a {
 
 .email-form {
   position: relative;
+  max-width: 350px;
 }
 
 .email-input {
-  width: 350px;
   height: 55px;
   display: flex;
   align-items: center;
   padding-right: 140px;
   padding-left: 10px;
   border-radius: 20px;
+  outline: none;
 }
 
 .email-button {
@@ -682,6 +891,7 @@ a {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  margin-top: 20px;
 }
 
 .line {
@@ -691,6 +901,9 @@ a {
 }
 
 @media screen and (max-width: 768px) {
+  .footer {
+    padding: 20px;
+  }
   .footer-wrap {
     flex-direction: column;
     align-items: flex-start;
@@ -699,6 +912,9 @@ a {
   }
   .email-form {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
 }
 @media screen and (max-width: 460px) {
@@ -721,5 +937,17 @@ a {
   }
   .footer-list-text-element {
     max-width: 100%;
+  }
+}
+@media screen and (max-width: 320px) {
+  .email-input {
+    width: 80%;
+    text-align: center;
+    padding: 0 10px;
+    margin: 0 auto;
+  }
+  .email-button {
+    width: 80%;
+    margin: 0 auto;
   }
 }/*# sourceMappingURL=style.css.map */
